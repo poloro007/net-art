@@ -12,12 +12,18 @@ body {
 
 }
 
+
 h1 {
-  color: #9833FF;
+  color: #a6a6a6;
+
   padding: 20px 0px 10px 0px;
 
 }
+h3 {
+  opacity: 0.001;
 
+  color: white;
+}
 a{
   color: #69CBBB;
   text-decoration: none;
@@ -37,4 +43,23 @@ margin: 0px auto;
 .portfolio-item {
 margin-top: 60px;
 padding: 40px;
+}
+.nonselect{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#hide{
+    transition: opacity 2s linear;
+    opacity: 0.001;
+}
+
+#show{
+  transition: opacity 0s linear;
+  opacity: 0.001;
+  transition-delay: opacity 3s linear;
+  opacity: 1;
 }
