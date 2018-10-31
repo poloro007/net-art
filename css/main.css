@@ -55,6 +55,7 @@ padding: 40px;
 #hide{
     transition: opacity 2s linear;
     opacity: 0.001;
+<!=== not reset after reset DON"T USE==!>
 }
 
 #show{
@@ -62,4 +63,5 @@ padding: 40px;
   opacity: 0.001;
   transition-delay: opacity 3s linear;
   opacity: 1;
+  <!==not showing after 3 second dont' use==!>
 }
