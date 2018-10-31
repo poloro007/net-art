@@ -17,12 +17,21 @@
 
 
   }
+  #hide{
+      transition: opacity 2s linear;
+      opacity: 0.001;
+  <!=== not reset after reset DON"T USE==!>
+  }
+
   body{
       background-image: url(img/star.jpg) ;
       background-size: cover;
       background-repeat: no-repeat;
       height:100%
   }
+
+
+
 
   </style>
 
@@ -31,12 +40,13 @@
 
  <body>
 
+
    <header>
     <div id="hide"> <h1>Find me in this dark sky</h1></div>
 </header>
 </body>
 
-     <div id="locator"><a href="pageone.html"><h3>X</h3></a></div>
+     <div id="locator"><a href="pageone.html"><div id="show"><h3>X</h3></a></div></div>
 
 
 </html>

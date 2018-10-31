@@ -20,9 +20,8 @@ h1 {
 
 }
 h3 {
-  opacity: 0.001;
-
   color: white;
+  text-decoration: none;
 }
 a{
   color: #69CBBB;
@@ -52,16 +51,18 @@ padding: 40px;
   -ms-user-select: none;
   user-select: none;
 }
+
 #hide{
-    transition: opacity 2s linear;
+    transition: opacity 1ms linear;
     opacity: 0.001;
+    
 <!=== not reset after reset DON"T USE==!>
 }
 
 #show{
-  transition: opacity 0s linear;
+  transition: opacity 0.1ms linear;
   opacity: 0.001;
-  transition-delay: opacity 3s linear;
+  transition: opacity 3s linear;
   opacity: 1;
   <!==not showing after 3 second dont' use==!>
 }
