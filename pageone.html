@@ -9,11 +9,11 @@
   #locator{
     position:absolute;
     visibility: visible;
-    left: 1000px;
-    top: 800px;
+    left: 1100px;
+    top: 5px;
     z-index: 200;
-    heigh: 200px;
-    width:150px;
+    heigh: 100px;
+    width:100px;
 
   }
   body{
@@ -30,7 +30,22 @@
  <body>
 
 <header>
-  <h1></h1>
+  <h1>Take your time......</h1>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+  <a class="button" onclick="myFuntion()"><h3><small>Sound?</small></h3></a>
+  <h1 id="nujabes"></h1>
+  <script>
+  function myFuntion(){
+    var str = "Spiriitual by Nujabes"
+    var result =str.blink();
+    document.getElementById("nujabes").innerHTML = result;
+  }
+</script>
+  <audio autoplay loop>
+    <source src="mp3/nujabes_spiritual_state.ogg" type="audio/ogg">
+    <source src="mp3/nujabes_spiritual_state.mp3" type="audio/mpeg">
+  </audio>
   <div id="locator"> <a href="pagetwo.html"><h3>X</h3></a></div>
 </header>
 

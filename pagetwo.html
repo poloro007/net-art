@@ -9,12 +9,11 @@
   #locator{
     position:absolute;
     visibility: visible;
-    left: 20
-    px;
+    left: 20px;
     top: 800px;
     z-index: 200;
-    heigh: 200px;
-    width:150px;
+    heigh: 100px;
+    width:100px;
 
   }
   body{
@@ -23,6 +22,8 @@
       background-repeat: no-repeat;
       height:100%
   }
+
+
   </style>
  </head>
 
@@ -30,7 +31,22 @@
  <body>
 
    <header>
-     <h1></h1>
+     <h1>Slow down and enjoy</h1>
+   </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+     <a class="button" onclick="myFuntion()"><h3><small>Sound?</small></h3></a>
+     <h1 id="nujabes"></h1>
+     <script>
+     function myFuntion(){
+       var str = "Spiral by Nujabes"
+       var result =str.blink();
+       document.getElementById("nujabes").innerHTML = result;
+     }
+     </script>
+     <audio autoplay loop>
+       <source src="mp3/nujabes_spiral.ogg" type="audio/ogg">
+       <source src="mp3/nujabes_spiral.mp3" type="audio/mpeg">
+     </audio>
     <div id="locator"><a href= "index.html"><h3>X</h3></a></div>
 
    </header>
